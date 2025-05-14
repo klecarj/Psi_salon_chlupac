@@ -1,0 +1,144 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tělo stránky */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1e7d0;
+  color: #5a3521;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden; /* Zamezení horizontálního posouvání */
+}
+
+/* Flexová výplň pro hlavní obsah */
+.flex-grow {
+  flex: 1; /* Flexibilní výplň mezi hlavičkou a patičkou */
+}
+
+/* Logo */
+.bulldog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  z-index: 10;
+  user-select: none;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+/* Kontejner */
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Hlavička */
+header {
+  background-color: #f4cfa0;
+  padding: 20px 0;
+  border-bottom: 2px solid #d39f79;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  user-select: none;
+}
+
+header h1 {
+  color: #5a3521;
+  text-align: center;
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* Navigace */
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  position: relative;
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #5a3521;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #c97b45;
+}
+
+/* Hero sekce */
+.hero {
+  background: url('../images/kuk.jpg') no-repeat center center/cover;
+  color: #5a3521;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px #00000088;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px #00000088;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #5a3521;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #a0522d;
+}
+
+/* Patička */
+.footer {
+  background-color: #f4cfa0;
+  text-align: center;
+  padding: 15px;
+  border-top: 2px solid #d39f79;
+  color: #5a3521;
+  font-size: 0.9em;
+  text-shadow: 1px 1px 3px #00000088;
+  user-select: none;
+  margin-top: auto; /* Přibití patičky dole */
+}
