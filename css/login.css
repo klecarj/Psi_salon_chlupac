@@ -1,0 +1,41 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Použití moderního fontu */
+  background-color: #f1e7d0; /* Světle béžová barva pozadí */
+  color: #5a3521; /* Tmavě hnědá barva textu */
+  line-height: 1.6; /* Větší řádkování pro lepší čitelnost */
+  margin: 0; /* Odstranění výchozího okraje */
+  height: 100vh; /* Výška těla na 100% viewportu */
+  display: flex; /* Flexbox pro zarovnání obsahu */
+  justify-content: center; /* Horizontální zarovnání na střed */
+  align-items: center; /* Vertikální zarovnání na střed */
+  text-align: center; /* Zarovnání textu na střed */
+  overflow: hidden; /* Zamezení posouvání obsahu */
+}
+
+.container {
+  background-color: rgb(224, 206, 144); /* Bílá barva pozadí pro kontejner */
+  padding: 2rem; /* Větší vnitřní odsazení */
+  border-radius: 12px; /* Zaoblení rohů kontejneru */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Mírný stín pro hloubku */
+}
+
+.login input {
+  margin: 0.5rem 0; /* Větší mezery mezi vstupy */
+  padding: 0.5rem; /* Větší vnitřní odsazení pro vstupy */
+  width: 100%; /* Šířka vstupů na 100% kontejneru */
+  max-width: 300px; /* Maximální šířka vstupů */
+}
+
+button {
+  margin-top: 1rem; /* Větší mezera nad tlačítkem */
+  padding: 0.75rem 1.5rem; /* Větší vnitřní odsazení pro tlačítko */
+  background-color: #5a3521; /* Tmavě hnědá barva pozadí tlačítka */
+  color: white; /* Bílá barva textu tlačítka */
+  border: none; /* Odstranění výchozího rámečku */
+  border-radius: 8px; /* Zaoblení rohů tlačítka */
+  cursor: pointer; /* Změna kurzoru na ruku při najetí na tlačítko */
+}
+
+button:hover {
+  background-color: #3d2316; /* Tmavší odstín při najetí myší */
+}

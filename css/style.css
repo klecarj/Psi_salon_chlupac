@@ -7,7 +7,7 @@
 
 /* Tělo stránky */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f1e7d0;
   color: #5a3521;
   line-height: 1.6;
@@ -98,7 +98,7 @@ nav ul li a:hover {
 
 /* Hero sekce */
 .hero {
-  background: url('../images/kuk.jpg') no-repeat center center/cover;
+  background: url("../images/kuk.jpg") no-repeat center center/cover;
   color: #5a3521;
   text-align: center;
   padding: 100px 20px;
@@ -141,4 +141,33 @@ nav ul li a:hover {
   text-shadow: 1px 1px 3px #00000088;
   user-select: none;
   margin-top: auto; /* Přibití patičky dole */
+}
+
+/* Úprava tabulky v souboru sluzby.html */
+.sluzby {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.sluzby table {
+  border: 2px solid #be1616;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden; /* zaoblené rohy */
+}
+
+.sluzby th,
+.sluzby td {
+  border: 1px solid #999;
+  padding: 12px 20px;
+  text-align: center;
+  background-color: #fff8f1;
+  color: #5a3521;
+}
+
+.sluzby th {
+  background-color: #f4cfa0;
 }

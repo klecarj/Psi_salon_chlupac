@@ -1,64 +1,100 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Služby - Psí salon Chlupáč</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJxv4f8H0o39Xp2Y4eY8WfKTklOp9f0c2z7F5gkY6+Y5F5F5gE5g5l5wZ5E5" crossorigin="anonymous">
-  <link rel="icon" type="image/x-icon" href="images/dog.png">
-</head>
-<body>
-
-<div class="bulldog">
-  <img src="images/bulldog-brown.png" alt="Bulldog" class="bulldog-image" />
-</div>
-
-<!-- 🐾 HLAVIČKA -->
-<header>
-  <div class="container text-center">
-    <div class="header-content">
-      <h1>Psí salon <b>Chlupáč</b></h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Služby - Psí salon Chlupáč</title>
+    <link rel="stylesheet" href="css/sluzby.css" />
+    <link rel="icon" type="image/x-icon" href="images/dog.png" />
+  </head>
+  <body>
+    <div class="bulldog">
+      <img src="images/bulldog-brown.png" alt="Bulldog" class="bulldog-image" />
     </div>
-    <nav>
-      <ul class="nav justify-content-center">
-        <li class="nav-item"><a class="nav-link" href="index.php">Domů</a></li>
-        <li class="nav-item"><a class="nav-link active" href="sluzby.html"><b>Služby</b></a></li>
-        <li class="nav-item"><a class="nav-link" href="cenik.html">Ceník</a></li>
-        <li class="nav-item"><a class="nav-link" href="oteviraci-doba.html">Otevírací doba</a></li>
-        <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
 
-  <section class="services py-5">
-    <div class="container text-center">
-      <h2 class="mb-4">Naše služby</h2>
-      <ul class="list-group list-group-flush mx-auto text-center" style="max-width: 600px;">
-        <li class="list-group-item">Stříhání</li>
-        <li class="list-group-item">Koupání</li>
-        <li class="list-group-item">Úprava srsti</li>
-        <li class="list-group-item">Údržba drápků</li>
-        <li class="list-group-item">Údržba uší</li>
-        <li class="list-group-item">Údržba zubů</li>
-      </ul>
-      <div class="mt-4">
-        <a href="cenik.html" class="btn btn-primary">Ceník</a>
+    <!-- 🐾 HLAVIČKA -->
+    <header>
+      <div class="container text-center">
+        <div class="header-content">
+          <h1>Psí salon <b>Chlupáč</b></h1>
+        </div>
+        <nav>
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.php">Domů</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="sluzby.html"><b>Služby</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="oteviraci-doba.html">Otevírací doba</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontakt.html">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </div>
-  </section>
-</main>
+    </header>
 
-<!-- 📞 PATIČKA -->
-<footer class="footer bg-light py-3 mt-auto">
-  <div class="container text-center">
-    <p>&copy; 2025 Psí salon Chlupáč</p>
-  </div>
-</footer>
+    <!-- 🐶 ÚVODNÍ SEKCE -->
+    <section class="sluzby">
+      <div class="container text-center">
+        <h2>Naše služby</h2>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Služba</th>
+                <th>Popis</th>
+                <th>Cena</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Stříhání</td>
+                <td>Profesionální stříhání psů všech plemen.</td>
+                <td>500 Kč</td>
+              </tr>
+              <tr>
+                <td>Česání</td>
+                <td>Česání a údržba srsti pro zdravý vzhled.</td>
+                <td>300 Kč</td>
+              </tr>
+              <tr>
+                <td>Koupání</td>
+                <td>Hloubkové čištění a péče o srst.</td>
+                <td>300 Kč</td>
+              </tr>
+              <tr>
+                <td>Drápky</td>
+                <td>Údržba drápků a péče o tlapky.</td>
+                <td>150 Kč</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-</body>
+    <section class="hero">
+      <h2>Vaši chlupáči si zaslouží tu nejlepší péči</h2>
+      <p class="lead">
+        V našem salonu se o vaše mazlíčky postaráme s láskou a profesionálně.
+      </p>
+    </section>
+
+    <!-- 📞 PATIČKA -->
+    <footer class="pata">
+      <div class="footer-text">
+        <p>&copy; 2025 Psí salon Chlupáč</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
